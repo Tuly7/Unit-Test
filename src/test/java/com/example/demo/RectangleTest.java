@@ -50,4 +50,11 @@ public class RectangleTest {
         Rectangle rectangle = new Rectangle(2, 7);
         assertFalse(rectangle.isSquare());
     }
+
+    @Test
+    public void testIsLargerThan() {
+        Rectangle rectangle1 = new Rectangle(5, 7);
+        Rectangle rectangle2 = new Rectangle(2, 3);
+        assertTrue(rectangle1.isLargerThan(rectangle2));
+    }
 }
