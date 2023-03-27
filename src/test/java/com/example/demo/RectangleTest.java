@@ -12,4 +12,10 @@ public class RectangleTest {
         assertEquals(12, rectangle.getArea());
     }
 
+    @Test
+    public void testSquareArea() {
+        Rectangle square = new Rectangle(5, 5);
+        assertEquals(25, square.getArea());
+    }
+
 }
