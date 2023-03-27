@@ -38,4 +38,10 @@ public class RectangleTest {
         Rectangle rectangle = new Rectangle(2, 7);
         assertEquals(14, rectangle.getArea());
     }
+    
+    @Test
+    public void testPerimeterWithSides3And5() {
+        Rectangle rectangle = new Rectangle(3, 5);
+        assertEquals(16, rectangle.getPerimeter());
+    }
 }
