@@ -32,4 +32,10 @@ public class RectangleTest {
     public void testZeroHeight() {
         Rectangle rectangle = new Rectangle(3, 0);
     }
+
+    @Test
+    public void testAreaWithSides2And7() {
+        Rectangle rectangle = new Rectangle(2, 7);
+        assertEquals(14, rectangle.getArea());
+    }
 }
