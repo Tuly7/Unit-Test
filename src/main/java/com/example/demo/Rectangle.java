@@ -9,6 +9,11 @@ public class Rectangle {
         this.width = width;
         this.height = height;
     }
+
+    public Rectangle(int sideLength) {
+        this.width = sideLength;
+        this.height = sideLength;
+    }
     
     public int getArea() {
         return width * height;
