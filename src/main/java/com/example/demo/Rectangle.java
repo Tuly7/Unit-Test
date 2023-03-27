@@ -39,4 +39,8 @@ public class Rectangle {
         return width == height;
     }
     
+    public boolean isLargerThan(Rectangle rectangle) {
+        return this.getArea() > rectangle.getArea();
+    }
+    
 }
