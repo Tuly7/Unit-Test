@@ -18,4 +18,8 @@ public class RectangleTest {
         assertEquals(25, square.getArea());
     }
 
+    @Test(expected = IllegalArgumentException.class)
+    public void testNegativeSideLength() {
+        Rectangle rectangle = new Rectangle(3, -4);
+    }
 }
