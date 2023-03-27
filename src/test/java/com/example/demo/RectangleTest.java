@@ -27,4 +27,9 @@ public class RectangleTest {
     public void testZeroWidth() {
         Rectangle rectangle = new Rectangle(0, 4);
     }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testZeroHeight() {
+        Rectangle rectangle = new Rectangle(3, 0);
+    }
 }
