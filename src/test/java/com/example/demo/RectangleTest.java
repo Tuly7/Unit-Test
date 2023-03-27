@@ -22,4 +22,9 @@ public class RectangleTest {
     public void testNegativeSideLength() {
         Rectangle rectangle = new Rectangle(3, -4);
     }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testZeroWidth() {
+        Rectangle rectangle = new Rectangle(0, 4);
+    }
 }
