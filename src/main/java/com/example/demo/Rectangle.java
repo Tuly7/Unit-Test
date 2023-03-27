@@ -43,4 +43,8 @@ public class Rectangle {
         return this.getArea() > rectangle.getArea();
     }
     
+    public boolean isSmallerThan(Rectangle rectangle) {
+        return this.getArea() < rectangle.getArea();
+    }
+    
 }
