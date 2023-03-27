@@ -9,6 +9,9 @@ public class Rectangle {
         if (width <= 0 || height <= 0) {
             throw new IllegalArgumentException("Side lengths must be positive");
         }
+        if (width == 0) {
+            throw new IllegalArgumentException("Width must be non-zero");
+        }
         this.width = width;
         this.height = height;
     }
