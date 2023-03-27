@@ -47,4 +47,8 @@ public class Rectangle {
         return this.getArea() < rectangle.getArea();
     }
     
+    public boolean hasSameAreaAs(Rectangle rectangle) {
+        return this.getArea() == rectangle.getArea();
+    }
+    
 }
