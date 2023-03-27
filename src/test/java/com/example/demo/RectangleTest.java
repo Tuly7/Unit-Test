@@ -57,4 +57,11 @@ public class RectangleTest {
         Rectangle rectangle2 = new Rectangle(2, 3);
         assertTrue(rectangle1.isLargerThan(rectangle2));
     }
+
+    @Test
+    public void testIsSmallerThan() {
+        Rectangle rectangle1 = new Rectangle(2, 3);
+        Rectangle rectangle2 = new Rectangle(5, 7);
+        assertTrue(rectangle1.isSmallerThan(rectangle2));
+    }
 }
